@@ -1,0 +1,1265 @@
+DIMENSION: 101
+VEHICLE CAPACITY: 200
+NUMBER OF OCCASIONAL DRIVERS: 50
+
+VERTEX_ID 	 VERTEX_X 	 VERTEX_Y 	 VERTEX_DEMAND 
+0 	 35 	 35 	 0 	
+1 	 41 	 49 	 10 	
+2 	 35 	 17 	 7 	
+3 	 55 	 45 	 13 	
+4 	 55 	 20 	 19 	
+5 	 15 	 30 	 26 	
+6 	 25 	 30 	 3 	
+7 	 20 	 50 	 5 	
+8 	 10 	 43 	 9 	
+9 	 55 	 60 	 16 	
+10 	 30 	 60 	 16 	
+11 	 20 	 65 	 12 	
+12 	 50 	 35 	 19 	
+13 	 30 	 25 	 23 	
+14 	 15 	 10 	 20 	
+15 	 30 	 5 	 8 	
+16 	 10 	 20 	 19 	
+17 	 5 	 30 	 2 	
+18 	 20 	 40 	 12 	
+19 	 15 	 60 	 17 	
+20 	 45 	 65 	 9 	
+21 	 45 	 20 	 11 	
+22 	 45 	 10 	 18 	
+23 	 55 	 5 	 29 	
+24 	 65 	 35 	 3 	
+25 	 65 	 20 	 6 	
+26 	 45 	 30 	 17 	
+27 	 35 	 40 	 16 	
+28 	 41 	 37 	 16 	
+29 	 64 	 42 	 9 	
+30 	 40 	 60 	 21 	
+31 	 31 	 52 	 27 	
+32 	 35 	 69 	 23 	
+33 	 53 	 52 	 11 	
+34 	 65 	 55 	 14 	
+35 	 63 	 65 	 8 	
+36 	 2 	 60 	 5 	
+37 	 20 	 20 	 8 	
+38 	 5 	 5 	 16 	
+39 	 60 	 12 	 31 	
+40 	 40 	 25 	 9 	
+41 	 42 	 7 	 5 	
+42 	 24 	 12 	 5 	
+43 	 23 	 3 	 7 	
+44 	 11 	 14 	 18 	
+45 	 6 	 38 	 16 	
+46 	 2 	 48 	 1 	
+47 	 8 	 56 	 27 	
+48 	 13 	 52 	 36 	
+49 	 6 	 68 	 30 	
+50 	 47 	 47 	 13 	
+51 	 49 	 58 	 10 	
+52 	 27 	 43 	 9 	
+53 	 37 	 31 	 14 	
+54 	 57 	 29 	 18 	
+55 	 63 	 23 	 2 	
+56 	 53 	 12 	 6 	
+57 	 32 	 12 	 7 	
+58 	 36 	 26 	 18 	
+59 	 21 	 24 	 28 	
+60 	 17 	 34 	 3 	
+61 	 12 	 24 	 13 	
+62 	 24 	 58 	 19 	
+63 	 27 	 69 	 10 	
+64 	 15 	 77 	 9 	
+65 	 62 	 77 	 20 	
+66 	 49 	 73 	 25 	
+67 	 67 	 5 	 25 	
+68 	 56 	 39 	 36 	
+69 	 37 	 47 	 6 	
+70 	 37 	 56 	 5 	
+71 	 57 	 68 	 15 	
+72 	 47 	 16 	 25 	
+73 	 44 	 17 	 9 	
+74 	 46 	 13 	 8 	
+75 	 49 	 11 	 18 	
+76 	 49 	 42 	 13 	
+77 	 53 	 43 	 14 	
+78 	 61 	 52 	 3 	
+79 	 57 	 48 	 23 	
+80 	 56 	 37 	 6 	
+81 	 55 	 54 	 26 	
+82 	 15 	 47 	 16 	
+83 	 14 	 37 	 11 	
+84 	 11 	 31 	 7 	
+85 	 16 	 22 	 41 	
+86 	 4 	 18 	 35 	
+87 	 28 	 18 	 26 	
+88 	 26 	 52 	 9 	
+89 	 26 	 35 	 15 	
+90 	 31 	 67 	 3 	
+91 	 15 	 19 	 1 	
+92 	 22 	 22 	 2 	
+93 	 18 	 24 	 22 	
+94 	 26 	 27 	 27 	
+95 	 25 	 24 	 20 	
+96 	 22 	 27 	 11 	
+97 	 25 	 21 	 12 	
+98 	 19 	 21 	 10 	
+99 	 20 	 26 	 9 	
+100 	 18 	 18 	 17 	
+
+OCCASIONAL DRIVERS DATA
+
+OCCASIONAL DRIVER 1
+x coordinate: 2.10
+y coordinate: 19.25
+Number of customers: 37
+Subset of customers: 
+Customer 2 profit 20.30284
+Customer 5 profit 1.30358
+Customer 6 profit 1.00000
+Customer 13 profit 4.46823
+Customer 14 profit 15.97951
+Customer 16 profit 1.00000
+Customer 17 profit 7.09661
+Customer 18 profit 9.43347
+Customer 27 profit 10.38935
+Customer 28 profit 17.65017
+Customer 37 profit 3.71562
+Customer 40 profit 18.25462
+Customer 42 profit 16.92473
+Customer 44 profit 8.04771
+Customer 45 profit 16.55735
+Customer 52 profit 12.94633
+Customer 53 profit 6.75036
+Customer 58 profit 10.00408
+Customer 59 profit 1.14389
+Customer 60 profit 3.52378
+Customer 61 profit 1.00000
+Customer 83 profit 8.38227
+Customer 84 profit 3.63143
+Customer 85 profit 1.00248
+Customer 86 profit 1.61617
+Customer 87 profit 10.97613
+Customer 89 profit 1.60564
+Customer 91 profit 2.85611
+Customer 92 profit 2.79844
+Customer 93 profit 1.00000
+Customer 94 profit 1.00000
+Customer 95 profit 2.48977
+Customer 96 profit 1.00000
+Customer 97 profit 5.17509
+Customer 98 profit 2.48598
+Customer 99 profit 1.00000
+Customer 100 profit 4.92223
+
+OCCASIONAL DRIVER 2
+x coordinate: 20.44
+y coordinate: 23.53
+Number of customers: 15
+Subset of customers: 
+Customer 6 profit 1.00000
+Customer 13 profit 3.24575
+Customer 37 profit 8.72477
+Customer 53 profit 5.74604
+Customer 58 profit 8.78626
+Customer 59 profit 1.00000
+Customer 89 profit 4.49380
+Customer 92 profit 2.84845
+Customer 93 profit 5.86749
+Customer 94 profit 1.00000
+Customer 95 profit 1.28234
+Customer 96 profit 1.00000
+Customer 97 profit 5.43880
+Customer 98 profit 7.88386
+Customer 99 profit 2.04760
+
+OCCASIONAL DRIVER 3
+x coordinate: 15.95
+y coordinate: 56.24
+Number of customers: 15
+Subset of customers: 
+Customer 6 profit 14.56773
+Customer 7 profit 1.00000
+Customer 18 profit 5.62380
+Customer 19 profit 10.29401
+Customer 27 profit 2.10181
+Customer 28 profit 13.13072
+Customer 31 profit 6.39483
+Customer 48 profit 6.20668
+Customer 52 profit 1.00000
+Customer 53 profit 12.32917
+Customer 62 profit 7.28140
+Customer 69 profit 9.27111
+Customer 82 profit 5.71172
+Customer 88 profit 2.25561
+Customer 89 profit 5.55266
+
+OCCASIONAL DRIVER 4
+x coordinate: 37.11
+y coordinate: 56.08
+Number of customers: 8
+Subset of customers: 
+Customer 1 profit 2.97119
+Customer 27 profit 1.00000
+Customer 28 profit 6.45462
+Customer 31 profit 5.08278
+Customer 52 profit 9.32824
+Customer 53 profit 11.71324
+Customer 69 profit 1.00000
+Customer 70 profit 1.00000
+
+OCCASIONAL DRIVER 5
+x coordinate: 55.99
+y coordinate: 30.48
+Number of customers: 11
+Subset of customers: 
+Customer 12 profit 1.44688
+Customer 26 profit 1.00000
+Customer 27 profit 9.20798
+Customer 28 profit 1.68033
+Customer 40 profit 9.25633
+Customer 53 profit 2.79705
+Customer 54 profit 4.37494
+Customer 58 profit 11.29753
+Customer 68 profit 11.79972
+Customer 76 profit 10.72025
+Customer 80 profit 8.60417
+
+OCCASIONAL DRIVER 6
+x coordinate: 12.73
+y coordinate: 66.76
+Number of customers: 29
+Subset of customers: 
+Customer 1 profit 13.75925
+Customer 6 profit 15.60150
+Customer 7 profit 1.00000
+Customer 8 profit 15.92463
+Customer 10 profit 7.35277
+Customer 11 profit 3.12509
+Customer 18 profit 6.65163
+Customer 19 profit 1.00000
+Customer 27 profit 1.43471
+Customer 28 profit 12.01458
+Customer 30 profit 20.72231
+Customer 31 profit 3.02684
+Customer 36 profit 21.40919
+Customer 47 profit 10.03601
+Customer 48 profit 5.28501
+Customer 49 profit 16.78022
+Customer 52 profit 1.00000
+Customer 53 profit 12.46065
+Customer 60 profit 17.18442
+Customer 62 profit 1.37169
+Customer 63 profit 14.81896
+Customer 69 profit 6.54202
+Customer 70 profit 12.39589
+Customer 82 profit 6.19287
+Customer 83 profit 16.92849
+Customer 88 profit 1.00000
+Customer 89 profit 6.48302
+Customer 90 profit 16.42500
+Customer 94 profit 21.23444
+
+OCCASIONAL DRIVER 7
+x coordinate: 6.01
+y coordinate: 41.73
+Number of customers: 23
+Subset of customers: 
+Customer 5 profit 7.89173
+Customer 6 profit 5.23847
+Customer 7 profit 10.78132
+Customer 8 profit 1.00000
+Customer 13 profit 14.93634
+Customer 18 profit 1.00000
+Customer 27 profit 5.99178
+Customer 28 profit 16.62000
+Customer 45 profit 4.38210
+Customer 48 profit 14.64627
+Customer 52 profit 3.61178
+Customer 53 profit 10.50945
+Customer 59 profit 15.77014
+Customer 60 profit 2.38709
+Customer 82 profit 5.57311
+Customer 83 profit 1.00000
+Customer 84 profit 8.97156
+Customer 89 profit 1.00000
+Customer 93 profit 16.65291
+Customer 94 profit 9.95911
+Customer 95 profit 15.52332
+Customer 96 profit 10.14532
+Customer 99 profit 12.30083
+
+OCCASIONAL DRIVER 8
+x coordinate: 44.80
+y coordinate: 8.42
+Number of customers: 19
+Subset of customers: 
+Customer 2 profit 3.77542
+Customer 13 profit 7.10706
+Customer 21 profit 1.79123
+Customer 22 profit 1.00000
+Customer 26 profit 6.20376
+Customer 27 profit 13.63103
+Customer 28 profit 9.55706
+Customer 40 profit 1.00000
+Customer 41 profit 5.13880
+Customer 53 profit 1.00000
+Customer 56 profit 13.74719
+Customer 57 profit 11.42019
+Customer 58 profit 1.00000
+Customer 72 profit 2.84773
+Customer 73 profit 1.00000
+Customer 74 profit 1.40072
+Customer 75 profit 6.13248
+Customer 87 profit 13.15406
+Customer 94 profit 14.20327
+
+OCCASIONAL DRIVER 9
+x coordinate: 49.34
+y coordinate: 39.19
+Number of customers: 5
+Subset of customers: 
+Customer 12 profit 6.02894
+Customer 27 profit 6.19267
+Customer 28 profit 1.00000
+Customer 53 profit 6.08078
+Customer 76 profit 4.96712
+
+OCCASIONAL DRIVER 10
+x coordinate: 18.84
+y coordinate: 47.53
+Number of customers: 7
+Subset of customers: 
+Customer 7 profit 4.89208
+Customer 18 profit 4.17302
+Customer 27 profit 3.33183
+Customer 52 profit 1.00000
+Customer 82 profit 9.45062
+Customer 88 profit 10.11991
+Customer 89 profit 4.17529
+
+OCCASIONAL DRIVER 11
+x coordinate: 46.54
+y coordinate: 31.90
+Number of customers: 3
+Subset of customers: 
+Customer 26 profit 2.34990
+Customer 28 profit 2.66642
+Customer 53 profit 2.94840
+
+OCCASIONAL DRIVER 12
+x coordinate: 4.31
+y coordinate: 35.03
+Number of customers: 29
+Subset of customers: 
+Customer 5 profit 2.43391
+Customer 6 profit 2.49521
+Customer 7 profit 17.09497
+Customer 8 profit 7.49465
+Customer 13 profit 11.29493
+Customer 17 profit 6.71616
+Customer 18 profit 2.21271
+Customer 27 profit 7.56034
+Customer 37 profit 17.14764
+Customer 45 profit 2.63732
+Customer 52 profit 6.54306
+Customer 53 profit 9.40695
+Customer 58 profit 15.84241
+Customer 59 profit 9.96548
+Customer 60 profit 1.00000
+Customer 61 profit 11.54781
+Customer 82 profit 12.15774
+Customer 83 profit 1.00000
+Customer 84 profit 2.02932
+Customer 85 profit 13.76850
+Customer 89 profit 1.00000
+Customer 92 profit 13.52923
+Customer 93 profit 9.99188
+Customer 94 profit 6.27096
+Customer 95 profit 10.66954
+Customer 96 profit 5.60043
+Customer 97 profit 16.11574
+Customer 98 profit 15.23416
+Customer 99 profit 6.86598
+
+OCCASIONAL DRIVER 13
+x coordinate: 60.51
+y coordinate: 6.91
+Number of customers: 29
+Subset of customers: 
+Customer 2 profit 10.48424
+Customer 4 profit 1.75947
+Customer 12 profit 9.86447
+Customer 13 profit 12.18813
+Customer 21 profit 1.00000
+Customer 22 profit 6.71499
+Customer 23 profit 5.51932
+Customer 25 profit 13.20419
+Customer 26 profit 1.47116
+Customer 27 profit 12.37138
+Customer 28 profit 5.93727
+Customer 39 profit 1.59528
+Customer 40 profit 1.00000
+Customer 41 profit 13.19871
+Customer 53 profit 1.00000
+Customer 54 profit 10.11395
+Customer 55 profit 12.31602
+Customer 56 profit 1.00000
+Customer 57 profit 19.89599
+Customer 58 profit 3.04925
+Customer 67 profit 17.74814
+Customer 72 profit 1.13563
+Customer 73 profit 2.14110
+Customer 74 profit 3.34419
+Customer 75 profit 2.87805
+Customer 76 profit 20.49054
+Customer 80 profit 19.00461
+Customer 87 profit 20.70608
+Customer 94 profit 19.64066
+
+OCCASIONAL DRIVER 14
+x coordinate: 56.10
+y coordinate: 45.68
+Number of customers: 15
+Subset of customers: 
+Customer 1 profit 9.86045
+Customer 3 profit 1.00000
+Customer 12 profit 5.11253
+Customer 26 profit 9.44133
+Customer 27 profit 4.48276
+Customer 28 profit 1.00000
+Customer 33 profit 11.41223
+Customer 50 profit 3.52336
+Customer 53 profit 6.87850
+Customer 68 profit 6.17784
+Customer 69 profit 10.72667
+Customer 76 profit 1.00000
+Customer 77 profit 1.00000
+Customer 79 profit 6.15862
+Customer 80 profit 8.58207
+
+OCCASIONAL DRIVER 15
+x coordinate: 15.76
+y coordinate: 66.00
+Number of customers: 26
+Subset of customers: 
+Customer 1 profit 12.84910
+Customer 6 profit 16.60609
+Customer 7 profit 1.79165
+Customer 8 profit 18.86170
+Customer 10 profit 6.24803
+Customer 11 profit 1.97793
+Customer 18 profit 7.93657
+Customer 19 profit 2.20819
+Customer 27 profit 1.20326
+Customer 28 profit 11.59896
+Customer 30 profit 19.57492
+Customer 31 profit 2.34313
+Customer 47 profit 14.52642
+Customer 48 profit 7.82035
+Customer 52 profit 1.00000
+Customer 53 profit 12.49847
+Customer 60 profit 18.99202
+Customer 62 profit 1.00000
+Customer 63 profit 14.10850
+Customer 69 profit 5.85004
+Customer 70 profit 11.32133
+Customer 82 profit 8.19398
+Customer 83 profit 19.12707
+Customer 88 profit 1.00000
+Customer 89 profit 7.22657
+Customer 90 profit 15.45229
+
+OCCASIONAL DRIVER 16
+x coordinate: 24.71
+y coordinate: 73.53
+Number of customers: 27
+Subset of customers: 
+Customer 1 profit 6.71593
+Customer 6 profit 20.76360
+Customer 7 profit 7.46191
+Customer 10 profit 1.00000
+Customer 11 profit 4.76704
+Customer 18 profit 13.70672
+Customer 19 profit 12.30507
+Customer 20 profit 19.25182
+Customer 27 profit 1.00000
+Customer 28 profit 9.01818
+Customer 30 profit 8.44307
+Customer 31 profit 1.00000
+Customer 32 profit 7.50601
+Customer 48 profit 17.40394
+Customer 50 profit 16.43677
+Customer 51 profit 22.22467
+Customer 52 profit 2.86896
+Customer 53 profit 12.40661
+Customer 62 profit 1.62567
+Customer 63 profit 1.00000
+Customer 69 profit 2.13271
+Customer 70 profit 3.67251
+Customer 76 profit 21.80211
+Customer 82 profit 16.37290
+Customer 88 profit 1.29331
+Customer 89 profit 10.73997
+Customer 90 profit 2.00861
+
+OCCASIONAL DRIVER 17
+x coordinate: 21.57
+y coordinate: 71.22
+Number of customers: 24
+Subset of customers: 
+Customer 1 profit 8.56731
+Customer 6 profit 19.47774
+Customer 7 profit 5.40520
+Customer 10 profit 1.25990
+Customer 11 profit 1.85578
+Customer 18 profit 11.81674
+Customer 19 profit 8.94167
+Customer 27 profit 1.00000
+Customer 28 profit 9.86517
+Customer 30 profit 11.82062
+Customer 31 profit 1.00000
+Customer 32 profit 12.57815
+Customer 48 profit 14.30277
+Customer 50 profit 18.84396
+Customer 52 profit 1.98997
+Customer 53 profit 12.48896
+Customer 62 profit 1.00000
+Customer 63 profit 3.03321
+Customer 69 profit 3.15515
+Customer 70 profit 5.79523
+Customer 82 profit 13.70394
+Customer 88 profit 1.00000
+Customer 89 profit 9.60377
+Customer 90 profit 5.53273
+
+OCCASIONAL DRIVER 18
+x coordinate: 11.05
+y coordinate: 41.99
+Number of customers: 14
+Subset of customers: 
+Customer 5 profit 11.59930
+Customer 6 profit 6.47277
+Customer 7 profit 11.59070
+Customer 8 profit 3.85976
+Customer 18 profit 1.00000
+Customer 27 profit 5.71817
+Customer 52 profit 3.28756
+Customer 53 profit 10.78495
+Customer 60 profit 4.25192
+Customer 82 profit 6.66240
+Customer 83 profit 2.71397
+Customer 89 profit 1.00000
+Customer 94 profit 11.56457
+Customer 96 profit 12.42505
+
+OCCASIONAL DRIVER 19
+x coordinate: 61.07
+y coordinate: 50.18
+Number of customers: 19
+Subset of customers: 
+Customer 1 profit 7.23471
+Customer 3 profit 1.00000
+Customer 12 profit 5.06908
+Customer 26 profit 9.53432
+Customer 27 profit 3.94701
+Customer 28 profit 1.00000
+Customer 29 profit 11.69616
+Customer 33 profit 4.00707
+Customer 50 profit 1.71822
+Customer 51 profit 15.59229
+Customer 53 profit 7.11496
+Customer 68 profit 4.88130
+Customer 69 profit 8.78683
+Customer 76 profit 1.00000
+Customer 77 profit 1.00000
+Customer 78 profit 3.79897
+Customer 79 profit 1.00000
+Customer 80 profit 7.06966
+Customer 81 profit 6.42310
+
+OCCASIONAL DRIVER 20
+x coordinate: 53.96
+y coordinate: 66.11
+Number of customers: 30
+Subset of customers: 
+Customer 1 profit 1.00000
+Customer 3 profit 9.89252
+Customer 9 profit 2.49694
+Customer 10 profit 19.29961
+Customer 12 profit 13.90250
+Customer 20 profit 5.89981
+Customer 26 profit 16.73604
+Customer 27 profit 1.16919
+Customer 28 profit 2.46040
+Customer 30 profit 6.01736
+Customer 31 profit 11.16999
+Customer 33 profit 3.45935
+Customer 35 profit 19.19708
+Customer 50 profit 1.22794
+Customer 51 profit 1.00000
+Customer 52 profit 14.54480
+Customer 53 profit 9.84476
+Customer 66 profit 17.56405
+Customer 68 profit 16.98768
+Customer 69 profit 1.79611
+Customer 70 profit 6.16684
+Customer 71 profit 9.52677
+Customer 76 profit 5.37107
+Customer 77 profit 8.95612
+Customer 78 profit 14.56485
+Customer 79 profit 10.48217
+Customer 80 profit 19.38477
+Customer 81 profit 4.63496
+Customer 88 profit 19.76622
+Customer 89 profit 20.15288
+
+OCCASIONAL DRIVER 21
+x coordinate: 55.65
+y coordinate: 59.25
+Number of customers: 24
+Subset of customers: 
+Customer 1 profit 1.76392
+Customer 3 profit 6.68625
+Customer 9 profit 1.62046
+Customer 12 profit 11.26926
+Customer 20 profit 16.62450
+Customer 26 profit 14.64200
+Customer 27 profit 1.93167
+Customer 28 profit 1.55919
+Customer 30 profit 13.03601
+Customer 31 profit 15.82939
+Customer 33 profit 1.00000
+Customer 50 profit 1.00000
+Customer 51 profit 2.57691
+Customer 52 profit 17.35980
+Customer 53 profit 9.06121
+Customer 68 profit 13.69358
+Customer 69 profit 3.67848
+Customer 70 profit 11.44422
+Customer 76 profit 3.20540
+Customer 77 profit 6.03750
+Customer 78 profit 11.51737
+Customer 79 profit 7.04952
+Customer 80 profit 16.09765
+Customer 81 profit 1.43714
+
+OCCASIONAL DRIVER 22
+x coordinate: 11.43
+y coordinate: 53.72
+Number of customers: 19
+Subset of customers: 
+Customer 6 profit 11.77118
+Customer 7 profit 1.00000
+Customer 8 profit 9.74977
+Customer 18 profit 2.64367
+Customer 19 profit 12.79763
+Customer 27 profit 3.04208
+Customer 28 profit 14.27276
+Customer 31 profit 9.81473
+Customer 47 profit 11.51599
+Customer 48 profit 1.00000
+Customer 52 profit 1.00000
+Customer 53 profit 12.00942
+Customer 60 profit 11.78742
+Customer 62 profit 12.14494
+Customer 69 profit 11.90633
+Customer 82 profit 1.16695
+Customer 83 profit 11.07635
+Customer 88 profit 5.33031
+Customer 89 profit 3.67099
+
+OCCASIONAL DRIVER 23
+x coordinate: 46.82
+y coordinate: 15.63
+Number of customers: 11
+Subset of customers: 
+Customer 2 profit 10.08784
+Customer 13 profit 10.83796
+Customer 21 profit 1.00000
+Customer 26 profit 4.16411
+Customer 28 profit 8.09462
+Customer 40 profit 1.00000
+Customer 53 profit 1.00000
+Customer 58 profit 1.89024
+Customer 72 profit 1.00000
+Customer 73 profit 1.00000
+Customer 74 profit 6.52049
+
+OCCASIONAL DRIVER 24
+x coordinate: 43.66
+y coordinate: 62.73
+Number of customers: 16
+Subset of customers: 
+Customer 1 profit 1.00000
+Customer 10 profit 14.52587
+Customer 20 profit 7.30713
+Customer 27 profit 1.00000
+Customer 28 profit 4.39795
+Customer 30 profit 1.41434
+Customer 31 profit 7.01220
+Customer 33 profit 13.91315
+Customer 50 profit 5.60297
+Customer 51 profit 7.01918
+Customer 52 profit 11.31987
+Customer 53 profit 10.98017
+Customer 69 profit 1.00000
+Customer 70 profit 2.11715
+Customer 76 profit 11.21439
+Customer 88 profit 15.18843
+
+OCCASIONAL DRIVER 25
+x coordinate: 10.06
+y coordinate: 46.45
+Number of customers: 16
+Subset of customers: 
+Customer 5 profit 14.49072
+Customer 6 profit 8.34406
+Customer 7 profit 6.05561
+Customer 8 profit 3.16348
+Customer 18 profit 1.00000
+Customer 27 profit 4.64466
+Customer 48 profit 9.29970
+Customer 52 profit 1.62188
+Customer 53 profit 11.31947
+Customer 60 profit 6.77594
+Customer 82 profit 1.19197
+Customer 83 profit 5.44935
+Customer 88 profit 12.13978
+Customer 89 profit 1.65714
+Customer 94 profit 13.64575
+Customer 96 profit 14.90338
+
+OCCASIONAL DRIVER 26
+x coordinate: 58.76
+y coordinate: 57.48
+Number of customers: 23
+Subset of customers: 
+Customer 1 profit 3.08470
+Customer 3 profit 3.75807
+Customer 9 profit 5.36393
+Customer 12 profit 8.98282
+Customer 26 profit 12.88412
+Customer 27 profit 2.50359
+Customer 28 profit 1.01264
+Customer 30 profit 16.39995
+Customer 31 profit 18.27152
+Customer 33 profit 1.00000
+Customer 34 profit 14.07584
+Customer 50 profit 1.00000
+Customer 51 profit 5.58666
+Customer 53 profit 8.45108
+Customer 68 profit 10.29220
+Customer 69 profit 5.05242
+Customer 70 profit 14.27480
+Customer 76 profit 1.73987
+Customer 77 profit 3.59957
+Customer 78 profit 5.98007
+Customer 79 profit 3.47904
+Customer 80 profit 12.66882
+Customer 81 profit 1.00000
+
+OCCASIONAL DRIVER 27
+x coordinate: 17.65
+y coordinate: 15.93
+Number of customers: 25
+Subset of customers: 
+Customer 2 profit 13.43646
+Customer 5 profit 12.81901
+Customer 6 profit 1.78425
+Customer 13 profit 1.00858
+Customer 27 profit 12.44666
+Customer 37 profit 1.00000
+Customer 40 profit 13.32319
+Customer 42 profit 10.04645
+Customer 53 profit 4.50191
+Customer 58 profit 5.88482
+Customer 59 profit 1.06781
+Customer 61 profit 13.39971
+Customer 85 profit 4.95017
+Customer 87 profit 4.41673
+Customer 89 profit 5.65373
+Customer 91 profit 5.45030
+Customer 92 profit 1.00000
+Customer 93 profit 3.56791
+Customer 94 profit 1.00000
+Customer 95 profit 1.00000
+Customer 96 profit 1.93058
+Customer 97 profit 1.00000
+Customer 98 profit 1.01955
+Customer 99 profit 2.87686
+Customer 100 profit 1.00000
+
+OCCASIONAL DRIVER 28
+x coordinate: 24.48
+y coordinate: 37.50
+Number of customers: 1
+Subset of customers: 
+Customer 89 profit 1.56489
+
+OCCASIONAL DRIVER 29
+x coordinate: 5.00
+y coordinate: 36.59
+Number of customers: 26
+Subset of customers: 
+Customer 5 profit 3.56809
+Customer 6 profit 3.07360
+Customer 7 profit 15.81077
+Customer 8 profit 6.07400
+Customer 13 profit 12.17078
+Customer 17 profit 9.74510
+Customer 18 profit 1.61373
+Customer 27 profit 7.21204
+Customer 45 profit 1.18130
+Customer 52 profit 5.86210
+Customer 53 profit 9.68010
+Customer 58 profit 16.48033
+Customer 59 profit 11.36916
+Customer 60 profit 1.00000
+Customer 61 profit 13.79965
+Customer 82 profit 10.80635
+Customer 83 profit 1.00000
+Customer 84 profit 3.48366
+Customer 85 profit 15.75066
+Customer 89 profit 1.00000
+Customer 92 profit 15.04162
+Customer 93 profit 11.62338
+Customer 94 profit 7.11882
+Customer 95 profit 11.83816
+Customer 96 profit 6.63571
+Customer 99 profit 8.13592
+
+OCCASIONAL DRIVER 30
+x coordinate: 26.58
+y coordinate: 69.26
+Number of customers: 22
+Subset of customers: 
+Customer 1 profit 6.74972
+Customer 7 profit 8.79766
+Customer 10 profit 1.00000
+Customer 11 profit 8.53268
+Customer 18 profit 14.72867
+Customer 19 profit 16.18151
+Customer 27 profit 1.00000
+Customer 28 profit 8.93472
+Customer 30 profit 9.13178
+Customer 31 profit 1.00000
+Customer 32 profit 10.00620
+Customer 50 profit 16.66035
+Customer 52 profit 3.21516
+Customer 53 profit 12.38479
+Customer 62 profit 2.47133
+Customer 63 profit 1.00000
+Customer 69 profit 2.05092
+Customer 70 profit 3.75397
+Customer 82 profit 18.38603
+Customer 88 profit 1.71412
+Customer 89 profit 11.17792
+Customer 90 profit 2.71097
+
+OCCASIONAL DRIVER 31
+x coordinate: 52.56
+y coordinate: 33.71
+Number of customers: 5
+Subset of customers: 
+Customer 12 profit 1.00000
+Customer 26 profit 2.79476
+Customer 27 profit 8.46264
+Customer 28 profit 1.03024
+Customer 53 profit 3.72374
+
+OCCASIONAL DRIVER 32
+x coordinate: 27.22
+y coordinate: 10.50
+Number of customers: 21
+Subset of customers: 
+Customer 2 profit 3.40520
+Customer 6 profit 7.14100
+Customer 13 profit 1.00000
+Customer 27 profit 13.72428
+Customer 37 profit 10.41577
+Customer 40 profit 6.72400
+Customer 42 profit 4.67833
+Customer 53 profit 2.07187
+Customer 57 profit 3.49847
+Customer 58 profit 1.62925
+Customer 59 profit 9.74805
+Customer 87 profit 1.00000
+Customer 89 profit 10.95467
+Customer 92 profit 7.43183
+Customer 94 profit 4.03346
+Customer 95 profit 3.97851
+Customer 96 profit 9.61068
+Customer 97 profit 3.12365
+Customer 98 profit 12.44535
+Customer 99 profit 12.44087
+Customer 100 profit 14.30970
+
+OCCASIONAL DRIVER 33
+x coordinate: 47.81
+y coordinate: 21.01
+Number of customers: 7
+Subset of customers: 
+Customer 21 profit 2.86100
+Customer 26 profit 2.28110
+Customer 28 profit 6.62862
+Customer 40 profit 1.37474
+Customer 53 profit 1.00000
+Customer 58 profit 4.07081
+Customer 73 profit 9.35740
+
+OCCASIONAL DRIVER 34
+x coordinate: 24.25
+y coordinate: 11.77
+Number of customers: 22
+Subset of customers: 
+Customer 2 profit 6.10127
+Customer 6 profit 5.35916
+Customer 13 profit 1.00000
+Customer 27 profit 13.45487
+Customer 37 profit 6.82627
+Customer 40 profit 8.61443
+Customer 42 profit 1.00000
+Customer 53 profit 2.72775
+Customer 57 profit 7.49081
+Customer 58 profit 2.67826
+Customer 59 profit 6.80404
+Customer 87 profit 1.00000
+Customer 89 profit 9.37740
+Customer 92 profit 4.56476
+Customer 93 profit 11.73628
+Customer 94 profit 2.48395
+Customer 95 profit 2.12985
+Customer 96 profit 7.08564
+Customer 97 profit 1.21437
+Customer 98 profit 8.79041
+Customer 99 profit 9.44287
+Customer 100 profit 10.17100
+
+OCCASIONAL DRIVER 35
+x coordinate: 29.43
+y coordinate: 44.55
+Number of customers: 2
+Subset of customers: 
+Customer 27 profit 1.58957
+Customer 52 profit 4.39857
+
+OCCASIONAL DRIVER 36
+x coordinate: 44.40
+y coordinate: 30.60
+Number of customers: 3
+Subset of customers: 
+Customer 26 profit 2.29912
+Customer 28 profit 4.47078
+Customer 53 profit 2.10422
+
+OCCASIONAL DRIVER 37
+x coordinate: 12.98
+y coordinate: 47.15
+Number of customers: 13
+Subset of customers: 
+Customer 6 profit 9.76245
+Customer 7 profit 5.09897
+Customer 8 profit 8.69343
+Customer 18 profit 1.00000
+Customer 27 profit 4.20343
+Customer 48 profit 10.51154
+Customer 52 profit 1.10010
+Customer 53 profit 11.57364
+Customer 60 profit 9.27998
+Customer 82 profit 1.00000
+Customer 83 profit 8.60494
+Customer 88 profit 11.17443
+Customer 89 profit 2.32206
+
+OCCASIONAL DRIVER 38
+x coordinate: 21.49
+y coordinate: 34.99
+Number of customers: 2
+Subset of customers: 
+Customer 6 profit 5.27929
+Customer 89 profit 1.00000
+
+OCCASIONAL DRIVER 39
+x coordinate: 15.40
+y coordinate: 16.06
+Number of customers: 29
+Subset of customers: 
+Customer 2 profit 14.51375
+Customer 5 profit 10.23030
+Customer 6 profit 1.19076
+Customer 13 profit 1.46162
+Customer 14 profit 15.17467
+Customer 16 profit 12.02455
+Customer 27 profit 12.15795
+Customer 37 profit 1.00000
+Customer 40 profit 14.13789
+Customer 42 profit 10.85141
+Customer 44 profit 13.30111
+Customer 53 profit 4.87129
+Customer 58 profit 6.54102
+Customer 59 profit 1.00000
+Customer 60 profit 12.29852
+Customer 61 profit 9.63194
+Customer 85 profit 2.43265
+Customer 87 profit 5.42852
+Customer 89 profit 4.82862
+Customer 91 profit 1.85649
+Customer 92 profit 1.00000
+Customer 93 profit 1.88765
+Customer 94 profit 1.00000
+Customer 95 profit 1.00000
+Customer 96 profit 1.09971
+Customer 97 profit 1.04315
+Customer 98 profit 1.00000
+Customer 99 profit 1.66651
+Customer 100 profit 1.00000
+
+OCCASIONAL DRIVER 40
+x coordinate: 32.62
+y coordinate: 19.72
+Number of customers: 5
+Subset of customers: 
+Customer 2 profit 8.60867
+Customer 13 profit 2.25753
+Customer 40 profit 6.70360
+Customer 53 profit 1.55082
+Customer 58 profit 1.01065
+
+OCCASIONAL DRIVER 41
+x coordinate: 52.66
+y coordinate: 74.29
+Number of customers: 36
+Subset of customers: 
+Customer 1 profit 1.00000
+Customer 3 profit 12.13117
+Customer 9 profit 4.78346
+Customer 10 profit 12.89643
+Customer 12 profit 15.82234
+Customer 20 profit 1.00000
+Customer 26 profit 18.27012
+Customer 27 profit 1.00000
+Customer 28 profit 3.24506
+Customer 30 profit 2.11653
+Customer 31 profit 7.65860
+Customer 32 profit 13.10953
+Customer 33 profit 5.56193
+Customer 34 profit 22.22461
+Customer 35 profit 16.59939
+Customer 50 profit 2.46921
+Customer 51 profit 1.00000
+Customer 52 profit 12.18681
+Customer 53 profit 10.40297
+Customer 58 profit 23.88611
+Customer 62 profit 21.54391
+Customer 65 profit 23.20959
+Customer 66 profit 1.82840
+Customer 68 profit 19.24485
+Customer 69 profit 1.00000
+Customer 70 profit 2.93787
+Customer 71 profit 5.91202
+Customer 76 profit 7.09965
+Customer 77 profit 11.07534
+Customer 78 profit 16.49739
+Customer 79 profit 12.76869
+Customer 80 profit 21.63754
+Customer 81 profit 6.90438
+Customer 88 profit 15.27708
+Customer 89 profit 18.76802
+Customer 90 profit 16.84395
+
+OCCASIONAL DRIVER 42
+x coordinate: 33.43
+y coordinate: 32.03
+Number of customers: 0
+Subset of customers: 
+
+OCCASIONAL DRIVER 43
+x coordinate: 47.66
+y coordinate: 64.31
+Number of customers: 22
+Subset of customers: 
+Customer 1 profit 1.00000
+Customer 3 profit 15.52429
+Customer 9 profit 12.03383
+Customer 10 profit 16.44680
+Customer 12 profit 17.46413
+Customer 20 profit 3.42270
+Customer 27 profit 1.00000
+Customer 28 profit 3.50994
+Customer 30 profit 3.30188
+Customer 31 profit 8.75378
+Customer 33 profit 8.74600
+Customer 50 profit 3.31053
+Customer 51 profit 2.02608
+Customer 52 profit 12.69543
+Customer 53 profit 10.52619
+Customer 69 profit 1.00000
+Customer 70 profit 3.75936
+Customer 76 profit 8.50341
+Customer 77 profit 13.63198
+Customer 79 profit 17.38583
+Customer 81 profit 11.63596
+Customer 88 profit 17.11242
+
+OCCASIONAL DRIVER 44
+x coordinate: 20.43
+y coordinate: 70.28
+Number of customers: 25
+Subset of customers: 
+Customer 1 profit 9.32144
+Customer 6 profit 18.96794
+Customer 7 profit 4.65854
+Customer 10 profit 1.91812
+Customer 11 profit 1.00000
+Customer 18 profit 11.09389
+Customer 19 profit 7.66004
+Customer 27 profit 1.00000
+Customer 28 profit 10.18971
+Customer 30 profit 13.20333
+Customer 31 profit 1.00000
+Customer 32 profit 14.63910
+Customer 47 profit 20.95420
+Customer 48 profit 13.11099
+Customer 50 profit 19.77711
+Customer 52 profit 1.68488
+Customer 53 profit 12.50746
+Customer 62 profit 1.00000
+Customer 63 profit 4.83327
+Customer 69 profit 3.59839
+Customer 70 profit 6.71899
+Customer 82 profit 12.68187
+Customer 88 profit 1.00000
+Customer 89 profit 9.16547
+Customer 90 profit 7.20508
+
+OCCASIONAL DRIVER 45
+x coordinate: 7.91
+y coordinate: 60.56
+Number of customers: 30
+Subset of customers: 
+Customer 1 profit 18.25619
+Customer 5 profit 20.63534
+Customer 6 profit 12.52706
+Customer 7 profit 1.00000
+Customer 8 profit 9.35857
+Customer 10 profit 14.49184
+Customer 11 profit 12.85384
+Customer 18 profit 3.38278
+Customer 19 profit 2.64117
+Customer 27 profit 2.46996
+Customer 28 profit 13.58124
+Customer 31 profit 6.78613
+Customer 36 profit 14.12645
+Customer 45 profit 20.36558
+Customer 46 profit 16.94025
+Customer 47 profit 2.12491
+Customer 48 profit 1.00000
+Customer 49 profit 20.12314
+Customer 52 profit 1.00000
+Customer 53 profit 12.18027
+Customer 60 profit 12.39409
+Customer 62 profit 6.36428
+Customer 69 profit 9.82467
+Customer 70 profit 18.61818
+Customer 82 profit 1.93047
+Customer 83 profit 11.45455
+Customer 88 profit 2.80741
+Customer 89 profit 4.29518
+Customer 94 profit 18.08820
+Customer 96 profit 20.18126
+
+OCCASIONAL DRIVER 46
+x coordinate: 21.37
+y coordinate: 52.15
+Number of customers: 8
+Subset of customers: 
+Customer 7 profit 2.59538
+Customer 18 profit 8.58196
+Customer 27 profit 1.89440
+Customer 31 profit 7.26803
+Customer 52 profit 1.00000
+Customer 69 profit 9.40421
+Customer 88 profit 2.74933
+Customer 89 profit 6.79881
+
+OCCASIONAL DRIVER 47
+x coordinate: 19.99
+y coordinate: 27.43
+Number of customers: 9
+Subset of customers: 
+Customer 6 profit 1.00000
+Customer 13 profit 6.54252
+Customer 53 profit 7.05983
+Customer 59 profit 6.40954
+Customer 89 profit 2.59585
+Customer 94 profit 1.76153
+Customer 95 profit 5.78480
+Customer 96 profit 1.00000
+Customer 99 profit 2.97112
+
+OCCASIONAL DRIVER 48
+x coordinate: 61.87
+y coordinate: 11.86
+Number of customers: 26
+Subset of customers: 
+Customer 2 profit 13.85569
+Customer 4 profit 1.00000
+Customer 12 profit 7.76490
+Customer 13 profit 14.26936
+Customer 21 profit 1.81775
+Customer 22 profit 11.81351
+Customer 23 profit 14.42795
+Customer 25 profit 9.52401
+Customer 26 profit 1.00000
+Customer 27 profit 11.82675
+Customer 28 profit 4.95282
+Customer 39 profit 1.00000
+Customer 40 profit 1.72705
+Customer 41 profit 19.40101
+Customer 53 profit 1.00000
+Customer 54 profit 7.22629
+Customer 55 profit 8.68074
+Customer 56 profit 3.66412
+Customer 58 profit 4.30775
+Customer 68 profit 19.15883
+Customer 72 profit 3.42635
+Customer 73 profit 4.56226
+Customer 74 profit 7.06652
+Customer 75 profit 7.31316
+Customer 76 profit 18.15077
+Customer 80 profit 16.03138
+
+OCCASIONAL DRIVER 49
+x coordinate: 30.44
+y coordinate: 59.20
+Number of customers: 12
+Subset of customers: 
+Customer 1 profit 7.40068
+Customer 10 profit 2.50405
+Customer 27 profit 1.00000
+Customer 28 profit 8.79426
+Customer 31 profit 1.00000
+Customer 52 profit 4.55057
+Customer 53 profit 12.31873
+Customer 62 profit 10.39619
+Customer 69 profit 1.94701
+Customer 70 profit 5.27346
+Customer 88 profit 4.29966
+Customer 89 profit 12.57105
+
+OCCASIONAL DRIVER 50
+x coordinate: 29.07
+y coordinate: 57.12
+Number of customers: 12
+Subset of customers: 
+Customer 1 profit 9.46659
+Customer 10 profit 7.88010
+Customer 27 profit 1.00000
+Customer 28 profit 9.53996
+Customer 31 profit 1.00000
+Customer 52 profit 3.75839
+Customer 53 profit 12.41555
+Customer 62 profit 10.84746
+Customer 69 profit 2.96956
+Customer 70 profit 8.68591
+Customer 88 profit 3.22948
+Customer 89 profit 11.80471

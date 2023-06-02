@@ -1,0 +1,17 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Validation" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="es.urjc.etsii.grafo.VRPOD.Main" />
+    <module name="VRPOD" />
+    <option name="VM_PARAMETERS" value="-ea --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.lang.reflect=ALL-UNNAMED" />
+    <option name="PROGRAM_PARAMETERS" value="--logging.level.es.urjc.etsii.grafo=INFO" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="es.urjc.etsii.grafo.VRPOD.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

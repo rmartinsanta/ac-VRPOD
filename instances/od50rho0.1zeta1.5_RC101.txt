@@ -1,0 +1,409 @@
+DIMENSION: 101
+VEHICLE CAPACITY: 200
+NUMBER OF OCCASIONAL DRIVERS: 50
+
+VERTEX_ID 	 VERTEX_X 	 VERTEX_Y 	 VERTEX_DEMAND 	 VERTEX_PROFIT
+0 	 40 	 50 	 0 	 0.00000 
+1 	 25 	 85 	 20 	 3.80789 
+2 	 22 	 75 	 30 	 3.08058 
+3 	 22 	 85 	 10 	 3.93573 
+4 	 20 	 80 	 40 	 3.60555 
+5 	 20 	 85 	 20 	 4.03113 
+6 	 18 	 75 	 20 	 3.33017 
+7 	 15 	 75 	 20 	 3.53553 
+8 	 15 	 80 	 10 	 3.90512 
+9 	 10 	 35 	 20 	 3.35410 
+10 	 10 	 40 	 30 	 3.16228 
+11 	 8 	 40 	 40 	 3.35261 
+12 	 8 	 45 	 20 	 3.23883 
+13 	 5 	 35 	 10 	 3.80789 
+14 	 5 	 45 	 10 	 3.53553 
+15 	 2 	 40 	 20 	 3.92938 
+16 	 0 	 40 	 20 	 4.12311 
+17 	 0 	 45 	 20 	 4.03113 
+18 	 44 	 5 	 20 	 4.51774 
+19 	 42 	 10 	 40 	 4.00500 
+20 	 42 	 15 	 10 	 3.50571 
+21 	 40 	 5 	 10 	 4.50000 
+22 	 40 	 15 	 40 	 3.50000 
+23 	 38 	 5 	 30 	 4.50444 
+24 	 38 	 15 	 10 	 3.50571 
+25 	 35 	 5 	 20 	 4.52769 
+26 	 95 	 30 	 30 	 5.85235 
+27 	 95 	 35 	 20 	 5.70088 
+28 	 92 	 30 	 10 	 5.57136 
+29 	 90 	 35 	 10 	 5.22015 
+30 	 88 	 30 	 10 	 5.20000 
+31 	 88 	 35 	 20 	 5.02892 
+32 	 87 	 30 	 10 	 5.10784 
+33 	 85 	 25 	 10 	 5.14782 
+34 	 85 	 35 	 30 	 4.74342 
+35 	 67 	 85 	 20 	 4.42041 
+36 	 65 	 85 	 40 	 4.30116 
+37 	 65 	 82 	 10 	 4.06079 
+38 	 62 	 80 	 30 	 3.72022 
+39 	 60 	 80 	 10 	 3.60555 
+40 	 60 	 85 	 30 	 4.03113 
+41 	 58 	 75 	 20 	 3.08058 
+42 	 55 	 80 	 10 	 3.35410 
+43 	 55 	 85 	 20 	 3.80789 
+44 	 55 	 82 	 10 	 3.53412 
+45 	 20 	 82 	 10 	 3.77359 
+46 	 18 	 80 	 10 	 3.72022 
+47 	 2 	 45 	 10 	 3.83275 
+48 	 42 	 5 	 10 	 4.50444 
+49 	 42 	 12 	 10 	 3.80526 
+50 	 72 	 35 	 30 	 3.53412 
+51 	 55 	 20 	 19 	 3.35410 
+52 	 25 	 30 	 3 	 2.50000 
+53 	 20 	 50 	 5 	 2.00000 
+54 	 55 	 60 	 16 	 1.80278 
+55 	 30 	 60 	 16 	 1.41421 
+56 	 50 	 35 	 19 	 1.80278 
+57 	 30 	 25 	 23 	 2.69258 
+58 	 15 	 10 	 20 	 4.71699 
+59 	 10 	 20 	 19 	 4.24264 
+60 	 15 	 60 	 17 	 2.69258 
+61 	 45 	 65 	 9 	 1.58114 
+62 	 65 	 35 	 3 	 2.91548 
+63 	 65 	 20 	 6 	 3.90512 
+64 	 45 	 30 	 17 	 2.06155 
+65 	 35 	 40 	 16 	 1.11803 
+66 	 41 	 37 	 16 	 1.30384 
+67 	 64 	 42 	 9 	 2.52982 
+68 	 40 	 60 	 21 	 1.00000 
+69 	 31 	 52 	 27 	 0.92195 
+70 	 35 	 69 	 23 	 1.96469 
+71 	 65 	 55 	 14 	 2.54951 
+72 	 63 	 65 	 8 	 2.74591 
+73 	 2 	 60 	 5 	 3.92938 
+74 	 20 	 20 	 8 	 3.60555 
+75 	 5 	 5 	 16 	 5.70088 
+76 	 60 	 12 	 31 	 4.29418 
+77 	 23 	 3 	 7 	 4.99800 
+78 	 8 	 56 	 27 	 3.25576 
+79 	 6 	 68 	 30 	 3.84708 
+80 	 47 	 47 	 13 	 0.76158 
+81 	 49 	 58 	 10 	 1.20416 
+82 	 27 	 43 	 9 	 1.47648 
+83 	 37 	 31 	 14 	 1.92354 
+84 	 57 	 29 	 18 	 2.70185 
+85 	 63 	 23 	 2 	 3.54683 
+86 	 21 	 24 	 28 	 3.22025 
+87 	 12 	 24 	 13 	 3.82099 
+88 	 24 	 58 	 19 	 1.78885 
+89 	 67 	 5 	 25 	 5.24786 
+90 	 37 	 47 	 6 	 0.42426 
+91 	 49 	 42 	 13 	 1.20416 
+92 	 53 	 43 	 14 	 1.47648 
+93 	 61 	 52 	 3 	 2.10950 
+94 	 57 	 48 	 23 	 1.71172 
+95 	 56 	 37 	 6 	 2.06155 
+96 	 55 	 54 	 26 	 1.55242 
+97 	 4 	 18 	 35 	 4.81664 
+98 	 26 	 52 	 9 	 1.41421 
+99 	 26 	 35 	 15 	 2.05183 
+100 	 31 	 67 	 3 	 1.92354 
+
+OCCASIONAL DRIVERS DATA
+
+OCCASIONAL DRIVER 1
+x coordinate: 0.14
+y coordinate: 21.01
+Number of customers: 40
+Subset of customers: 
+9 10 11 12 13 14 15 16 17 24 47 52 53 55 56 57 58 59 60 64 65 66 68 69 74 75 78 80 81 82 83 86 87 88 90 91 92 97 98 99 
+OCCASIONAL DRIVER 2
+x coordinate: 26.94
+y coordinate: 25.75
+Number of customers: 14
+Subset of customers: 
+52 57 64 65 66 69 80 82 83 86 90 91 98 99 
+OCCASIONAL DRIVER 3
+x coordinate: 20.38
+y coordinate: 62.00
+Number of customers: 9
+Subset of customers: 
+53 55 60 68 69 88 90 98 100 
+OCCASIONAL DRIVER 4
+x coordinate: 51.32
+y coordinate: 61.81
+Number of customers: 6
+Subset of customers: 
+54 61 68 80 81 96 
+OCCASIONAL DRIVER 5
+x coordinate: 78.91
+y coordinate: 33.45
+Number of customers: 33
+Subset of customers: 
+29 30 31 32 33 34 50 51 54 56 61 62 63 64 65 66 67 68 69 71 72 80 81 83 84 85 90 91 92 93 94 95 96 
+OCCASIONAL DRIVER 6
+x coordinate: 15.68
+y coordinate: 73.65
+Number of customers: 23
+Subset of customers: 
+2 4 6 7 8 45 46 53 55 60 61 65 68 69 70 79 80 81 82 88 90 98 100 
+OCCASIONAL DRIVER 7
+x coordinate: 5.87
+y coordinate: 45.92
+Number of customers: 25
+Subset of customers: 
+9 10 11 12 13 14 15 16 17 47 52 53 55 60 65 66 68 69 78 80 82 88 90 98 99 
+OCCASIONAL DRIVER 8
+x coordinate: 62.56
+y coordinate: 9.00
+Number of customers: 39
+Subset of customers: 
+18 19 20 21 22 23 24 48 49 50 51 52 54 56 57 62 63 64 65 66 67 68 69 76 80 81 82 83 84 85 89 90 91 92 93 94 95 96 99 
+OCCASIONAL DRIVER 9
+x coordinate: 69.18
+y coordinate: 43.10
+Number of customers: 17
+Subset of customers: 
+50 54 56 62 66 67 68 71 80 81 90 91 92 93 94 95 96 
+OCCASIONAL DRIVER 10
+x coordinate: 24.61
+y coordinate: 52.34
+Number of customers: 3
+Subset of customers: 
+69 90 98 
+OCCASIONAL DRIVER 11
+x coordinate: 65.10
+y coordinate: 35.03
+Number of customers: 17
+Subset of customers: 
+50 56 62 64 65 66 67 80 81 84 90 91 92 93 94 95 96 
+OCCASIONAL DRIVER 12
+x coordinate: 3.37
+y coordinate: 38.49
+Number of customers: 29
+Subset of customers: 
+9 10 11 12 13 14 15 16 17 47 52 53 55 57 60 65 66 68 69 78 80 82 83 86 87 88 90 98 99 
+OCCASIONAL DRIVER 13
+x coordinate: 85.52
+y coordinate: 7.33
+Number of customers: 53
+Subset of customers: 
+18 19 20 21 22 23 24 26 27 28 29 30 31 32 33 34 48 49 50 51 52 54 55 56 57 61 62 63 64 65 66 67 68 69 71 72 76 80 81 82 83 84 85 89 90 91 92 93 94 95 96 98 99 
+OCCASIONAL DRIVER 14
+x coordinate: 79.06
+y coordinate: 50.29
+Number of customers: 22
+Subset of customers: 
+50 54 56 61 62 65 66 67 68 69 71 72 80 81 84 90 91 92 93 94 95 96 
+OCCASIONAL DRIVER 15
+x coordinate: 20.11
+y coordinate: 72.81
+Number of customers: 19
+Subset of customers: 
+2 4 6 7 46 53 55 60 61 68 69 70 80 81 82 88 90 98 100 
+OCCASIONAL DRIVER 16
+x coordinate: 33.19
+y coordinate: 81.16
+Number of customers: 13
+Subset of customers: 
+1 2 55 61 68 69 70 80 81 88 90 98 100 
+OCCASIONAL DRIVER 17
+x coordinate: 28.60
+y coordinate: 78.59
+Number of customers: 15
+Subset of customers: 
+1 2 4 6 55 61 68 69 70 80 81 88 90 98 100 
+OCCASIONAL DRIVER 18
+x coordinate: 13.22
+y coordinate: 46.20
+Number of customers: 12
+Subset of customers: 
+10 12 53 55 65 68 69 82 88 90 98 99 
+OCCASIONAL DRIVER 19
+x coordinate: 86.33
+y coordinate: 55.28
+Number of customers: 25
+Subset of customers: 
+34 41 50 54 56 61 62 64 65 66 67 68 69 71 72 80 81 84 90 91 92 93 94 95 96 
+OCCASIONAL DRIVER 20
+x coordinate: 75.94
+y coordinate: 72.94
+Number of customers: 30
+Subset of customers: 
+35 36 37 38 39 40 41 42 43 44 54 55 61 65 66 67 68 69 70 71 72 80 81 90 91 92 93 94 95 96 
+OCCASIONAL DRIVER 21
+x coordinate: 78.41
+y coordinate: 65.33
+Number of customers: 24
+Subset of customers: 
+37 38 39 41 42 54 56 61 65 66 67 68 69 71 72 80 81 90 91 92 93 94 95 96 
+OCCASIONAL DRIVER 22
+x coordinate: 13.78
+y coordinate: 59.20
+Number of customers: 12
+Subset of customers: 
+53 55 60 65 68 69 78 82 88 90 98 100 
+OCCASIONAL DRIVER 23
+x coordinate: 65.50
+y coordinate: 16.99
+Number of customers: 29
+Subset of customers: 
+20 22 49 50 51 54 56 62 63 64 65 66 67 68 69 76 80 81 82 83 84 85 90 91 92 93 94 95 96 
+OCCASIONAL DRIVER 24
+x coordinate: 60.88
+y coordinate: 69.18
+Number of customers: 14
+Subset of customers: 
+41 54 61 68 71 72 80 81 90 91 92 93 94 96 
+OCCASIONAL DRIVER 25
+x coordinate: 11.79
+y coordinate: 51.15
+Number of customers: 13
+Subset of customers: 
+12 53 55 60 65 68 69 78 82 88 90 98 99 
+OCCASIONAL DRIVER 26
+x coordinate: 82.96
+y coordinate: 63.37
+Number of customers: 27
+Subset of customers: 
+37 38 39 41 42 50 54 55 56 61 62 65 66 67 68 69 71 72 80 81 90 91 92 93 94 95 96 
+OCCASIONAL DRIVER 27
+x coordinate: 22.88
+y coordinate: 17.32
+Number of customers: 22
+Subset of customers: 
+20 22 24 52 53 56 57 64 65 66 69 74 80 82 83 86 87 90 91 92 98 99 
+OCCASIONAL DRIVER 28
+x coordinate: 32.86
+y coordinate: 41.23
+Number of customers: 2
+Subset of customers: 
+65 90 
+OCCASIONAL DRIVER 29
+x coordinate: 4.39
+y coordinate: 40.22
+Number of customers: 26
+Subset of customers: 
+9 10 11 12 13 14 15 16 17 47 52 53 55 60 65 66 68 69 78 80 82 83 88 90 98 99 
+OCCASIONAL DRIVER 30
+x coordinate: 35.92
+y coordinate: 76.42
+Number of customers: 10
+Subset of customers: 
+55 61 68 69 70 80 81 88 90 100 
+OCCASIONAL DRIVER 31
+x coordinate: 73.89
+y coordinate: 37.03
+Number of customers: 21
+Subset of customers: 
+50 54 56 62 64 65 66 67 68 71 80 81 84 85 90 91 92 93 94 95 96 
+OCCASIONAL DRIVER 32
+x coordinate: 36.86
+y coordinate: 11.31
+Number of customers: 30
+Subset of customers: 
+18 19 20 21 22 23 24 25 48 49 51 52 56 57 64 65 66 69 74 80 82 83 84 86 90 91 92 95 98 99 
+OCCASIONAL DRIVER 33
+x coordinate: 66.96
+y coordinate: 22.95
+Number of customers: 25
+Subset of customers: 
+50 51 54 56 62 63 64 65 66 67 68 69 76 80 81 83 84 85 90 91 92 93 94 95 96 
+OCCASIONAL DRIVER 34
+x coordinate: 32.51
+y coordinate: 12.71
+Number of customers: 27
+Subset of customers: 
+19 20 21 22 23 24 25 49 52 56 57 64 65 66 69 74 80 82 83 84 86 90 91 92 95 98 99 
+OCCASIONAL DRIVER 35
+x coordinate: 40.09
+y coordinate: 49.04
+Number of customers: 0
+Subset of customers: 
+
+OCCASIONAL DRIVER 36
+x coordinate: 61.97
+y coordinate: 33.58
+Number of customers: 16
+Subset of customers: 
+56 62 64 65 66 67 80 81 84 90 91 92 93 94 95 96 
+OCCASIONAL DRIVER 37
+x coordinate: 16.05
+y coordinate: 51.92
+Number of customers: 10
+Subset of customers: 
+53 55 60 65 68 69 82 88 90 98 
+OCCASIONAL DRIVER 38
+x coordinate: 28.48
+y coordinate: 38.45
+Number of customers: 4
+Subset of customers: 
+65 69 82 90 
+OCCASIONAL DRIVER 39
+x coordinate: 19.59
+y coordinate: 17.47
+Number of customers: 26
+Subset of customers: 
+9 10 22 24 52 53 56 57 58 59 64 65 66 68 69 74 80 82 83 86 87 90 91 92 98 99 
+OCCASIONAL DRIVER 40
+x coordinate: 44.76
+y coordinate: 21.53
+Number of customers: 16
+Subset of customers: 
+20 22 56 57 64 65 66 69 80 82 83 84 90 91 92 95 
+OCCASIONAL DRIVER 41
+x coordinate: 74.05
+y coordinate: 81.99
+Number of customers: 31
+Subset of customers: 
+35 36 37 38 39 40 41 42 43 44 54 55 61 65 66 67 68 69 70 71 72 80 81 90 91 92 93 94 95 96 100 
+OCCASIONAL DRIVER 42
+x coordinate: 45.94
+y coordinate: 35.16
+Number of customers: 6
+Subset of customers: 
+56 65 66 80 90 91 
+OCCASIONAL DRIVER 43
+x coordinate: 66.74
+y coordinate: 70.94
+Number of customers: 18
+Subset of customers: 
+38 39 41 42 54 61 68 69 71 72 80 81 90 91 92 93 94 96 
+OCCASIONAL DRIVER 44
+x coordinate: 26.94
+y coordinate: 77.55
+Number of customers: 14
+Subset of customers: 
+2 4 6 55 61 68 69 70 80 81 88 90 98 100 
+OCCASIONAL DRIVER 45
+x coordinate: 8.63
+y coordinate: 66.78
+Number of customers: 21
+Subset of customers: 
+2 6 7 53 55 60 61 65 68 69 70 73 78 79 80 81 82 88 90 98 100 
+OCCASIONAL DRIVER 46
+x coordinate: 28.31
+y coordinate: 57.46
+Number of customers: 4
+Subset of customers: 
+55 69 90 98 
+OCCASIONAL DRIVER 47
+x coordinate: 26.30
+y coordinate: 30.08
+Number of customers: 11
+Subset of customers: 
+52 57 65 66 69 80 82 83 90 98 99 
+OCCASIONAL DRIVER 48
+x coordinate: 87.50
+y coordinate: 12.82
+Number of customers: 50
+Subset of customers: 
+18 19 20 22 24 26 27 28 29 30 31 32 33 34 49 50 51 52 54 55 56 57 61 62 63 64 65 66 67 68 69 71 72 76 80 81 82 83 84 85 89 90 91 92 93 94 95 96 98 99 
+OCCASIONAL DRIVER 49
+x coordinate: 41.57
+y coordinate: 65.27
+Number of customers: 3
+Subset of customers: 
+61 68 81 
+OCCASIONAL DRIVER 50
+x coordinate: 39.57
+y coordinate: 62.97
+Number of customers: 1
+Subset of customers: 
+68 

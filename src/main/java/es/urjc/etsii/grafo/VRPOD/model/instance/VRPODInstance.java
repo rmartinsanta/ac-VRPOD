@@ -47,7 +47,7 @@ public abstract class VRPODInstance extends Instance {
     protected int numberOfDestinations;
 
     /**
-     * Capacity of each vehicle used, each destination has an associated cost, the vehicle route must: capacity < sum(each destination cost)
+     * Capacity of each vehicle used, each destination has an associated cost, the vehicle route must: {@code capacity < sum(each destination cost)}
      */
     protected int capacity;
 
@@ -272,5 +272,16 @@ public abstract class VRPODInstance extends Instance {
         return INSTANCE_COMPARATOR.compare(this, (VRPODInstance) o);
     }
 
+    public int generatorType(){
+        if(generator.startsWith("C")){
+            return 1; // clustered
+        } else if(generator.startsWith("R")){
+            return 2; // random
+        } else if(generator.startsWith("RC")){
+            return 3; // hybrid
+        } else {
+            throw new IllegalArgumentException("Unknown generator type: " + generator);
+        }
+    }
 
 }

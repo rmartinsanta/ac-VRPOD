@@ -11,56 +11,28 @@
     <parent>
         <groupId>es.urjc.etsii.grafo</groupId>
         <artifactId>mork-parent</artifactId>
-        <version>0.17</version>
+        <version>0.19-SNAPSHOT</version>
     </parent>
 
     <dependencies>
         <dependency>
             <groupId>es.urjc.etsii.grafo</groupId>
             <artifactId>mork</artifactId>
-            <version>0.18</version>
-        </dependency>
-        <dependency>
-            <groupId>es.urjc.etsii.grafo</groupId>
-            <artifactId>mork-common</artifactId>
-            <version>0.18</version>
         </dependency>
         <dependency>
             <groupId>es.urjc.etsii.grafo</groupId>
             <artifactId>autoconfig</artifactId>
-            <version>0.18</version>
         </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
-            <version>${springboot.version}</version>
             <scope>test</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.junit.vintage</groupId>
-                    <artifactId>junit-vintage-engine</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>com.vaadin.external.google</groupId>
-                    <artifactId>android-json</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
     </dependencies>
 
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>${mcompiler.version}</version>
-                <configuration>
-                    <compilerArgs>
-                        <arg>-parameters</arg>
-                    </compilerArgs>
-                </configuration>
-            </plugin>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>

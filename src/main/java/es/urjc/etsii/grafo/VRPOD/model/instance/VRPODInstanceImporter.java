@@ -4,6 +4,7 @@ import es.urjc.etsii.grafo.io.InstanceImporter;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.HashSet;
 
 public class VRPODInstanceImporter extends InstanceImporter<VRPODInstance> {
@@ -146,6 +147,87 @@ public class VRPODInstanceImporter extends InstanceImporter<VRPODInstance> {
         instance.initializeClients(clientsCoordinates);
         instance.computeDistances();
 
+        calculateInstanceProperties(instance, numberOfDestinations, numOccasionalDrivers, capacity);
+
         return instance;
     }
+
+    private void calculateInstanceProperties(VRPODInstance instance, int numberOfDestinations, int numOccasionalDrivers, int capacity) {
+        instance.setProperty("n_destinations", numberOfDestinations);
+        instance.setProperty("n_ods", numOccasionalDrivers);
+        instance.setProperty("rho", instance.rho);
+        instance.setProperty("zeta", instance.zeta);
+        instance.setProperty("instance_generator_type", instance.generatorType());
+        instance.setProperty("vehicle_capacity", capacity);
+
+        int[] packetSizes = Arrays.copyOfRange(instance.packetSizes, 1, instance.packetSizes.length); // client 0 is the depot
+        var packageMetrics = calculateStats(packetSizes);
+        instance.setProperty("pkg_max_size", packageMetrics.max());
+        instance.setProperty("pkg_min_size", packageMetrics.min());
+        instance.setProperty("pkg_avg_size", packageMetrics.avg());
+        instance.setProperty("pkg_std_size", packageMetrics.std());
+
+        double[] distancesFromDepot =Arrays.copyOfRange(instance._dist[0], 1, instance._dist[0].length); // depot is always 0
+        var distanceMetrics = calculateStats(distancesFromDepot);
+        instance.setProperty("client_max_distance", distanceMetrics.max());
+        instance.setProperty("client_min_distance", distanceMetrics.min());
+        instance.setProperty("client_avg_distance", distanceMetrics.avg());
+        instance.setProperty("client_std_distance", distanceMetrics.std());
+
+
+        var odsNumbers = new int[numOccasionalDrivers];
+        for (int i = 1; i < instance.ods2Clients.length; i++) {
+            odsNumbers[i-1] = instance.ods2Clients[i].size(); // ods2Clients is 1-indexed
+        }
+
+        var odsMetrics = calculateStats(odsNumbers);
+        instance.setProperty("ods_max_number", odsMetrics.max());
+        instance.setProperty("ods_min_number", odsMetrics.min());
+        instance.setProperty("ods_avg_number", odsMetrics.avg());
+        instance.setProperty("ods_std_number", odsMetrics.std());
+    }
+
+    private record IntStats(int min, int max, int sum, double avg, double std) {}
+    private record DoubleStats(double min, double max, double sum, double avg, double std) {}
+
+    private IntStats calculateStats(int[] data){
+        int min = Integer.MAX_VALUE;
+        int max = Integer.MIN_VALUE;
+        int sum = 0;
+
+        for (int n : data) {
+            if (n < min) min = n;
+            if (n > max) max = n;
+            sum = Math.addExact(sum, n);
+        }
+
+        double avg = (double) sum / data.length;
+        double std = 0;
+        for(int n: data){
+            std += Math.pow(n - avg, 2);
+        }
+        std = Math.sqrt(std / data.length);
+        return new IntStats(min, max, sum, avg, std);
+    }
+
+    private DoubleStats calculateStats(double[] data){
+        double min = Integer.MAX_VALUE;
+        double max = Integer.MIN_VALUE;
+        double sum = 0;
+
+        for (double n : data) {
+            if (n < min) min = n;
+            if (n > max) max = n;
+            sum += n;
+        }
+
+        double avg = sum / data.length;
+        double std = 0;
+        for(double n: data){
+            std += Math.pow(n - avg, 2);
+        }
+        std = Math.sqrt(std / data.length);
+        return new DoubleStats(min, max, sum, avg, std);
+    }
+
 }

@@ -46,6 +46,18 @@ Instances are categorized in different datasets inside the 'instances' folder.
 See the VRPODInstanceImporter class for full details about how to parse the instance files.
 The provided format is not trivial.
 
+## Properties used for instance classification and selection
+- Number of client destinations
+- Number of occasional drivers
+- Rho
+- Zeta
+- Instance generator type (Clustered, Random, Hybrid), numbered as 1, 2 and 3 respectively
+- Route vehicle capacity
+- (min, max, avg, std) distance to depot for all clients
+- (min, max, avg, std) Available ODs per clients
+- (min, max, avg, std) Package size
+
+
 ## Compiling
 
 You can easily compile and build an executable artifact of this project using Maven and a recent version of Java (17+):

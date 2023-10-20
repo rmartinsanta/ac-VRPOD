@@ -47,8 +47,7 @@ public class SeqExchangerILS extends Algorithm<VRPODSolution, VRPODInstance> {
 //        }
 
         // Create threads and workers
-//        var executor = Executors.newFixedThreadPool(4);
-        var executor = Executors.newVirtualThreadPerTaskExecutor();
+        var executor = Executors.newFixedThreadPool(4);
         var first = new ArrayBlockingQueue<VRPODSolution>(1);
         var activeWorkers = new AtomicInteger(nWorkers);
         var barrier = new CyclicBarrier(nWorkers, () -> activeWorkers.set(nWorkers));

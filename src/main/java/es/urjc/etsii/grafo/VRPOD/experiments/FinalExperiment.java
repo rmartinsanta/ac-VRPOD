@@ -43,7 +43,7 @@ public class FinalExperiment extends AbstractExperiment<VRPODSolution, VRPODInst
                 ROOT=IteratedGreedy ROOT_IteratedGreedy.constructive=VRPODGRASPConstructive ROOT_IteratedGreedy.constructive_VRPODGRASPConstructive.alpha=0.9 ROOT_IteratedGreedy.destructionReconstruction=RandomMovement ROOT_IteratedGreedy.destructionReconstruction_RandomMovement.multiplier=10 ROOT_IteratedGreedy.improver=VND ROOT_IteratedGreedy.improver_VND.improver1=LocalSearchBestImprovement ROOT_IteratedGreedy.improver_VND.improver1_LocalSearchBestImprovement.neighborhood=InsertNeigh ROOT_IteratedGreedy.improver_VND.improver2=LocalSearchBestImprovement ROOT_IteratedGreedy.improver_VND.improver2_LocalSearchBestImprovement.neighborhood=RouteToODNeigh ROOT_IteratedGreedy.improver_VND.improver3=LocalSearchBestImprovement ROOT_IteratedGreedy.improver_VND.improver3_LocalSearchBestImprovement.neighborhood=VRPODExtendedNeighborhood ROOT_IteratedGreedy.maxIterations=467074 ROOT_IteratedGreedy.stopIfNotImprovedIn=400000
                 """.split("\n");
 
-        algorithms.add(sotaAlgorithm());
+        //algorithms.add(sotaAlgorithm());
         for (int i = 0; i < iraceOutput.length; i++) {
             if (!iraceOutput[i].isBlank()) {
                 var algorithm = builder.buildFromStringParams(iraceOutput[i].trim());
@@ -55,25 +55,5 @@ public class FinalExperiment extends AbstractExperiment<VRPODSolution, VRPODInst
         }
 
         return algorithms;
-    }
-
-
-
-    public Algorithm<VRPODSolution, VRPODInstance> sotaAlgorithm() {
-        Supplier<Constructive<VRPODSolution, VRPODInstance>> grasp_0 = () -> new VRPODGRASPConstructive(0);
-        Supplier<Constructive<VRPODSolution, VRPODInstance>> grasp_random = VRPODGRASPConstructive::new;
-        Supplier<Shake<VRPODSolution, VRPODInstance>> shakeS = () -> new RandomMovement(1);
-        Supplier<Improver<VRPODSolution, VRPODInstance>> improverS = () -> new LocalSearchBestImprovement<>(FMode.MINIMIZE, new VRPODExtendedNeighborhood());
-
-        var sota =  new SeqExchangerILS("sota", 100, 2,
-                new ILSConfig(25, grasp_0, shakeS, improverS),
-                new ILSConfig(50, grasp_0, shakeS, improverS),
-                new ILSConfig(25, grasp_random, shakeS, improverS),
-                new ILSConfig(50, grasp_random, shakeS, improverS)
-        );
-        // Wrap algorithms as multistart with "infinite" iterations
-        // Algorithms will automatically stop when they reach the timelimit for a given instance
-        var multistart = new MultiStartAlgorithm<>("sota", sota, 1_000_000, 1_000_000, 1_000_000);
-        return multistart;
     }
 }

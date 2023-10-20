@@ -35,6 +35,6 @@ public class VRPODTimeLimit extends TimeLimitCalculator<VRPODSolution, VRPODInst
             //log.warn("Unknown reference instance: {}", instance.getId());
             return 1_000; // 1 Segundos si se desconoce la instancia para saltarsela rapido
         }
-        return (long)(refResult * 1000);
+        return (long)(refResult * 1000)*2; // Double the reference timelimit as the state of the art
     }
 }

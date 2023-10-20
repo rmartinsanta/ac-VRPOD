@@ -11,6 +11,7 @@ import java.util.regex.Pattern;
 
 public abstract class VRPODInstance extends Instance {
 
+    private static final int AUTOMATIC_EXECUTION_RATIO = 10;
     protected static final Pattern FILE_PATTERN = Pattern.compile("od(\\d+)rho(\\d\\.\\d+)zeta(1\\.\\d+)_(.*)\\.txt");
 
     protected static final Comparator<VRPODInstance> INSTANCE_COMPARATOR = Comparator
@@ -260,9 +261,9 @@ public abstract class VRPODInstance extends Instance {
     }
 
 
-//    public int getRecommendedNumberOfShakes(){
-//        return Math.max(getNumOccasionalDrivers() * AUTOMATIC_EXECUTION_RATIO, 1);
-//    }
+    public int getRecommendedNumberOfShakes(){
+        return Math.max(getNumOccasionalDrivers() * AUTOMATIC_EXECUTION_RATIO, 1);
+    }
 
     /**
      * Sort instances in this order: by od, rho, zeta, generator type

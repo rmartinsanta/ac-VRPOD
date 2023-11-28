@@ -16,6 +16,7 @@ import java.util.Map;
 public class VRPODTimeLimit extends TimeLimitCalculator<VRPODSolution, VRPODInstance> {
 
     private static final Logger log = LoggerFactory.getLogger(VRPODTimeLimit.class);
+    private static final int maxTime = 300_000; // 300 seconds (5 min) max time for any instance
 
     Map<String, Double> results;
 
@@ -35,6 +36,7 @@ public class VRPODTimeLimit extends TimeLimitCalculator<VRPODSolution, VRPODInst
             //log.warn("Unknown reference instance: {}", instance.getId());
             return 1_000; // 1 Segundos si se desconoce la instancia para saltarsela rapido
         }
-        return (long)(refResult * 1000)*2; // Double the reference timelimit as the state of the art
+        var desiredTime = (long)(refResult * 1000)*2; // Double the reference timelimit as the state of the art
+        return Math.min(maxTime, desiredTime); // Cap time due to hardware limitations, there are too many instances to execute
     }
 }

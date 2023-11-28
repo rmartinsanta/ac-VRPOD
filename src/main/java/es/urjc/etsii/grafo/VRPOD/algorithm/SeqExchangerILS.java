@@ -3,15 +3,9 @@ package es.urjc.etsii.grafo.VRPOD.algorithm;
 import es.urjc.etsii.grafo.VRPOD.model.instance.VRPODInstance;
 import es.urjc.etsii.grafo.VRPOD.model.solution.VRPODSolution;
 import es.urjc.etsii.grafo.algorithms.Algorithm;
-import es.urjc.etsii.grafo.util.DoubleComparator;
+import es.urjc.etsii.grafo.util.TimeControl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import java.util.ArrayList;
-import java.util.concurrent.*;
-import java.util.concurrent.atomic.AtomicInteger;
-
-import static es.urjc.etsii.grafo.util.ConcurrencyUtil.awaitAll;
 
 @SuppressWarnings("DuplicatedCode")
 public class SeqExchangerILS extends Algorithm<VRPODSolution, VRPODInstance> {
@@ -38,75 +32,52 @@ public class SeqExchangerILS extends Algorithm<VRPODSolution, VRPODInstance> {
      * @return Best solution found
      */
     public VRPODSolution algorithm(VRPODInstance ins) {
-
-//        int nThreads = Runtime.getRuntime().availableProcessors() / 2;
-//
         var nWorkers = this.configs.length;
-//        if (nThreads < nWorkers) {
-//            System.out.format("[Warning] Available nThreads (%s) is less than the number of configured workers (%s), performance may be reduced\n", nThreads, nWorkers);
-//        }
-
+        VRPODSolution best = null;
         // Create threads and workers
-        var executor = Executors.newFixedThreadPool(4);
-        var first = new ArrayBlockingQueue<VRPODSolution>(1);
-        var activeWorkers = new AtomicInteger(nWorkers);
-        var barrier = new CyclicBarrier(nWorkers, () -> activeWorkers.set(nWorkers));
-        var prev = first;
-        var workers = new ArrayList<ILSWorker>();
+        var workers = new ILSWorker[nWorkers];
+        var currentSolutions = new VRPODSolution[nWorkers];
+
         for (int i = 0; i < nWorkers; i++) {
-            // Next is a new queue if not the last element, and the first element if we are the last
-            var next = i == nWorkers - 1 ? first : new ArrayBlockingQueue<VRPODSolution>(1);
-            workers.add(new ILSWorker(getBuilder(), executor, configs[i], prev, next, barrier, activeWorkers, nWorkers, nRotateRounds));
-            prev = next;
+            workers[i] = new ILSWorker(i, currentSolutions, getBuilder(), configs[i], nWorkers, nRotateRounds);
         }
 
         if (nSoluciones % nWorkers != 0) {
             log.warn("nSolutions is not a multiple of workers, using nearest number: {}", nSoluciones / nWorkers * nWorkers);
         }
 
-        VRPODSolution best = null;
         for (int i = 0; i < nSoluciones / nWorkers; i++) {
-            var futures = new ArrayList<Future<VRPODSolution>>();
-            for (var worker : workers) {
-                futures.add(worker.buildInitialSolution(ins));
+            for (int j = 0; j < workers.length && !TimeControl.isTimeUp(); j++) {
+                currentSolutions[j] = workers[j].buildInitialSolution(ins);
             }
-
-            // Wait until all solutions are build before starting the next phase
-            var solutions = awaitAll(futures);
-
-            // Shuffle list and start working on them
-            //Collections.shuffle(solutions, RandomManager.getRandom());
 
             // Improvement rounds
-            futures = new ArrayList<>();
-            for (int j = 0; j < workers.size(); j++) {
-                futures.add(workers.get(j).startWorker(solutions.get(j)));
+            for (int j = 0; j < workers.length && !TimeControl.isTimeUp(); j++) {
+                ILSWorker worker = workers[j];
+                worker.work();
             }
 
-            VRPODSolution current = getBestSolution(futures);
-            if (best == null || DoubleComparator.isLess(current.getOptimalValue(), best.getOptimalValue())) {
-                best = current;
+            // Migrate solutions
+            var first = currentSolutions[0];
+            for (int j = 1; j < currentSolutions.length; j++) {
+                currentSolutions[j - 1] = currentSolutions[j];
             }
+            currentSolutions[currentSolutions.length - 1] = first;
+            best = getBestSolution(currentSolutions);
         }
 
-        executor.shutdown();
         return best;
     }
 
-    private static VRPODSolution getBestSolution(ArrayList<Future<VRPODSolution>> futures) {
-        try {
-            double min = Double.MAX_VALUE;
-            VRPODSolution best = null;
-            for(var future: futures){
-                var solution = future.get();
-                if(solution.getOptimalValue() < min){
-                    best = solution;
-                    min = solution.getOptimalValue();
-                }
+    private static VRPODSolution getBestSolution(VRPODSolution[] solutions) {
+        double min = Double.MAX_VALUE;
+        VRPODSolution best = null;
+        for (var solution : solutions) {
+            if (solution != null && solution.getOptimalValue() < min) {
+                best = solution;
+                min = solution.getOptimalValue();
             }
-            return best;
-        } catch (Exception e){
-            throw new RuntimeException(e);
         }
+        return best;
     }
 }

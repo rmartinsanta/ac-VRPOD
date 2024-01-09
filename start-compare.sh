@@ -8,5 +8,5 @@ java \
 --serializers.solution-json.frequency=all \
 --solver.experiments=FinalExperiment \
 --solver.parallelExecutor=true \
---solver.nWorkers=16 \
+--solver.nWorkers=8 \
 --solver.metrics=true

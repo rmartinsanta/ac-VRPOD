@@ -2,6 +2,6 @@
 log.txt
 errors
 target
-CAP.iml
+*.iml
 .DS_Store
 .benchmark

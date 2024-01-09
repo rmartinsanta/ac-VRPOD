@@ -1,0 +1,17 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="ScoreParser" type="Application" factoryName="Application" nameIsGenerated="true">
+    <output_file path="scoreparser.log" is_save="true" />
+    <option name="MAIN_CLASS_NAME" value="es.urjc.etsii.grafo.VRPOD.ScoreParser" />
+    <module name="VRPOD" />
+    <option name="PROGRAM_PARAMETERS" value="solutions _" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="es.urjc.etsii.grafo.VRPOD.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
